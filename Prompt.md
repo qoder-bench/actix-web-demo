@@ -1,17 +1,18 @@
-# 新需求
+# New Requirement
 
-请为该应用添加JWT Authentication支持，对所有的`/api/v1/*`路由进行保护，
-只有携带有效JWT令牌的请求才能访问这些路由。请提供实现该功能的代码示例。
+Please add JWT Authentication support for this application to protect all `/api/v1/*` routes,
+allowing only requests with valid JWT tokens to access these routes. Please provide code examples for implementing this functionality.
 
-JWT的算法为HS256，密钥为`my_secret_key`。JWT令牌应包含用户的ID和过期时间(exp)声明。
+The JWT algorithm is HS256, with the secret key being `my_secret_key`. The JWT token should contain the user's ID and expiration time (exp) claim.
 
-# 新需求
+# New Requirement
 
-请问该应用添加SQLite数据库支持，使用`Diesel`作为ORM工具，要求如下：
+Please add SQLite database support for this application, using `Diesel` as the ORM tool. Requirements:
 
-- 数据库文件名为`app.sqlite`，存储在`./db/`目录下。
-- 请创建`account`表，包括典型的字段，如nick, password, email, phone, status, created_at, updated_at等，建表语句保存在
-  `db/schema.ddl`文件中。
-- 请提供创建数据库连接池的代码示例。
-- 创建account_repo模块，包含基本的CRUD操作代码示例。
-- 创建account_controller模块，包含处理HTTP请求的代码示例。
+- Database file name is `app.sqlite`, stored in the `./db/` directory.
+- Please create an `account` table with typical fields such as nick, password, email, phone, status, created_at, updated_at, etc. Save the create table statement in the `db/schema.ddl` file.
+- Please provide code examples for creating a database connection pool.
+- Create an account_repo module with basic CRUD operation code examples.
+- Create an account_controller module with code examples for handling HTTP requests.
+
+
